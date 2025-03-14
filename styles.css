@@ -1,0 +1,101 @@
+/* MAIN PAGE COLORS */
+
+:root {
+    --amaranth-red: #D32929;
+    --deep-lemon: #FACD1E;
+    --old-lace: #FFF5E6;
+    --dutch-white: #E5DBB7;
+    --dark-vanilla: #CAC198;
+    --antique-ruby: #7F2122;
+  }
+  
+  /* IMPORT FONTS */
+  
+  .luxurious-roman-regular {
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* OVERALL PAGE */
+  
+  * {
+    font-family: "Luxurious Roman", "Times New Roman", serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dutch-white);
+  }
+  
+  h1 {
+    margin: 15vh auto 5vh auto;
+    color: var(--antique-ruby);
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  .field {
+    width: min(70vw, 650px);
+    max-width: 800px;
+    min-width: 350px;
+    border: 5px solid var(--dark-vanilla);
+    margin: auto;
+  }
+  
+  .input {
+    background-color: var(--antique-ruby);
+    color: var(--deep-lemon);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    height: 20vh;
+  }
+  
+  #user-msg {
+    font-size: 1.5em;
+  }
+  
+  #number {
+    color: var(--deep-lemon);
+    background-color: var(--antique-ruby);
+    border: 3px solid var(--dark-vanilla);
+    font-size: 1.5em;
+    height: 2.5em;
+    margin: auto 0;
+  }
+  
+  #convert-btn {
+    background-color: var(--deep-lemon);
+    color: var(--antique-ruby);
+    border: 3px solid var(--dark-vanilla);
+    font-size: 1em;
+    height: 2em;
+    width: 7em;
+    margin: auto 0 0 auto;
+  }
+  
+  .result {
+    background-color: var(--old-lace);
+    color: var(--antique-ruby);
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .error {
+    color: var(--old-lace);
+    background-color: var(--amaranth-red);
+    border: 5px solid var(--antique-ruby);
+  }
